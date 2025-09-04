@@ -1,0 +1,22 @@
+# Core dashboard and utilities
+streamlit==1.35.0
+pydantic==2.8.2
+pydantic-settings==2.4.0  # BaseSettings for Pydantic v2
+python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.2
+
+# Optional: file tailing for live ingestion
+watchdog==4.0.1
+
+# Optional: high-performance event loop (Linux/macOS only)
+uvloop==0.19.0 ; platform_system != "Windows"
+
+# ML stack (optional; required for LogBERT scoring)
+# Note: Choose the Torch build matching your platform/CUDA. This pins a CPU-compatible
+# version commonly available via pip wheels. For CUDA, install the appropriate extra
+# from PyTorch docs instead of this exact pin if needed.
+torch==2.3.1
+
+# Optional: Transformers for LogBERT/MLM models
+transformers==4.41.2
